@@ -7,7 +7,7 @@ jobs:
       - image: circleci/node:14
     resource_class: medium
     steps:
-      - run: uname -a
+      - run: lsb_release -r
       - run: 
           name: Get soure
           command: |-
