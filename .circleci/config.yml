@@ -7,7 +7,7 @@ jobs:
       - image: circleci/node:14
     resource_class: medium
     steps:
-      - run: lsb_release -r
+      - run: cat /etc/os-release
       - run: 
           name: Get soure
           command: |-
