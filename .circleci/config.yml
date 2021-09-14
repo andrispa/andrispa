@@ -2,9 +2,10 @@ version: 2.1
 
 jobs:
   run-jobs:
-    machine:
-      image: ubuntu-2004:202101-01
+    docker:
+      image: circleci/node:14
     resource_class: medium
+    working_directory: ~/soure-data-run
     steps:
       - run: node -v
       #- run: 
