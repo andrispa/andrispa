@@ -6,7 +6,6 @@ jobs:
     docker:
       - image: circleci/node:14
     resource_class: medium
-    working_directory: ~/soure-data-run
     steps:
       - run: uname -a
       - run: 
